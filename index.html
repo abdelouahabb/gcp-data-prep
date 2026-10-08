@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCP Professional Data Engineer — Deep-Dive & Exam Simulator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top-header">
+    <div class="brand">
+      <div class="gcp-dots">
+        <div class="dot blue"></div>
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
+      <h1>Google Cloud Data Engineer Hub <span>PDE Certification</span></h1>
+    </div>
+
+    <nav class="nav-tabs">
+      <button class="nav-btn active" data-tab="knowledge" onclick="switchTab('knowledge')">
+        📚 Deep-Dive Knowledge Base
+      </button>
+      <button class="nav-btn" data-tab="decisions" onclick="switchTab('decisions')">
+        🧭 Architecture Decision Matrix
+      </button>
+      <button class="nav-btn" data-tab="cheatsheet" onclick="switchTab('cheatsheet')">
+        ⚡ Exam Cram Cheat Sheets
+      </button>
+      <button class="nav-btn" data-tab="simulator" onclick="switchTab('simulator')">
+        🎯 Realistic Exam Simulator (20 Scenarios)
+      </button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero-banner">
+      <div class="hero-text">
+        <h2>Master Google Cloud Data Engineering From First Principles</h2>
+        <p>
+          Designed for the notoriously rigorous <strong>Google Cloud Professional Data Engineer (PDE)</strong> exam.
+          Study internal architectures (Colossus, Dremel, TrueTime, Streaming Engine), avoid classic exam traps,
+          and test your readiness with realistic scenario-based simulations.
+        </p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-box">
+          <span class="num" id="stat-mastered">0/4</span>
+          <span class="lbl">Domains Mastered</span>
+        </div>
+        <div class="stat-box">
+          <span class="num" id="stat-answered">0/20</span>
+          <span class="lbl">Sim Questions Done</span>
+        </div>
+        <div class="stat-box">
+          <span class="num" style="color:var(--gcp-green)">75%</span>
+          <span class="lbl">Target Pass Score</span>
+        </div>
+      </div>
+    </section>
+
+    <div id="app-content"></div>
+  </main>
+
+  <script src="knowledge-data.js"></script>
+  <script src="exam-questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
